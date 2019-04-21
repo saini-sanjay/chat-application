@@ -4,7 +4,7 @@ import { ChatManager, TokenProvider } from '@pusher/chatkit-client';
 import SendMessageForm from './Components/sendMessageForm';
 import RoomList from './Components/RoomList';
 import NewRoomForm from './Components/NewRoomForm';
-
+import './style.css';
 class App extends Component {
   constructor(){
     super();

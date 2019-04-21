@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './newroom.css';
 class NewRoomForm extends React.Component {
     
     constructor() {
@@ -31,7 +31,7 @@ class NewRoomForm extends React.Component {
                         value={this.state.roomName}
                         onChange={this.handleChange}
                         type="text" 
-                        placeholder="NewRoomForm" 
+                        placeholder="Create a room" 
                         required />
                     <button id="create-room-btn" type="submit">+</button>
             </form>

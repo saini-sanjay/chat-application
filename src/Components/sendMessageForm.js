@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './messageform.css';
 class SendMessageForm extends React.Component {
 	constructor(){
 		super();
@@ -21,7 +22,7 @@ class SendMessageForm extends React.Component {
 		return (
 			<div className="send-message-form">
 			<form onSubmit={this.handleSubmit} className="send-message-form">
-                <input
+                <input 
                     disabled={this.props.disabled}
                     onChange={this.handleChange}
                     value={this.state.message}

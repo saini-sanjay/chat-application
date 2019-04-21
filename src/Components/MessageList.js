@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-/*const dummyData=[
-{ id:"sanjay",
-  text:"hi anas!"
-
-},
-{  id:"anas",
-   text:"i am fine"
-}]*/
+import './messagelist.css';
  class MessageList extends React.Component {
  	  componentWillUpdate() {
         const node = ReactDOM.findDOMNode(this)
@@ -31,7 +24,7 @@ import ReactDOM from 'react-dom';
             )
         }
 		return (
-			<div>
+			<div className="message-list">
 			{
 			this.props.messages.map((message,index)=>(
 			 <div key={index} className="message">
@@ -40,6 +33,7 @@ import ReactDOM from 'react-dom';
                         </div>
 			))
 			}	
+
 			</div>
 		)
 	}
